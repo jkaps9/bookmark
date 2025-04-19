@@ -47,8 +47,11 @@
           </a>
         </div>
 
-        <!-- Hamburger Icon -->
-        <button id="menu-btn" class="md:hidden focus:outline-none hamburger">
+        <!-- Hamburger Button -->
+        <button
+          id="menu-btn"
+          class="z-30 block md:hidden focus:outline-none hamburger"
+        >
           <span class="hamburger-top"></span>
           <span class="hamburger-middle"></span>
           <span class="hamburger-bottom"></span>
@@ -593,50 +596,30 @@
     </section>
 
     <!-- Footer -->
-    <footer id="#footer" class="bg-slate-900">
-      <!-- Container -->
+    <footer class="py-16 bg-veryDarkBlue">
+      <!-- Footer Flex Container -->
       <div
-        class="relative flex justify-between items-center mx-auto px-6 py-10 text-center text-white"
+        class="container flex flex-col justify-between items-center mx-auto space-y-16 px-6 md:flex-row md:space-y-0"
       >
-        <!-- Menu -->
+        <!-- Logo/Menu Container -->
         <div
-          class="hidden items-center justify-center space-x-5 uppercase md:space-x-10 md:flex"
+          class="flex flex-col items-center justify-between space-y-8 text-lg font-light md:flex-row md:space-y-0 space-x-14 text-grayishBlue"
         >
           <!-- Logo -->
-          <div class="hover:cursor-pointer z-10">
-            <img src="images/logo-bookmark-footer.svg" alt="" />
-          </div>
-          <div>
-            <a href="#features" class="hover:border-b-2 hover:border-b-red-500"
-              >Features</a
-            >
-          </div>
-          <div>
-            <a href="#download" class="hover:border-b-2 hover:border-b-red-500"
-              >Download</a
-            >
-          </div>
-          <div>
-            <a href="#faq" class="hover:border-b-2 hover:border-b-red-500"
-              >FAQ</a
-            >
-          </div>
+          <img src="images/logo-bookmark-footer.svg" alt="" class="mb-1" />
+          <a href="#features" class="uppercase hover:text-softRed">Features</a>
+          <a href="#download" class="uppercase hover:text-softRed">Download</a>
+          <a href="#faq" class="uppercase hover:text-softRed">FAQ</a>
         </div>
 
-        <!-- Socials -->
-        <div
-          class="hidden items-center justify-center space-x-5 uppercase md:space-x-10 md:flex"
-        >
-          <div>
-            <a href="#" class="hover:text-red"
-              ><img src="images/icon-facebook.svg" alt=""
-            /></a>
-          </div>
-          <div>
-            <a href="#" class="hover:text-red"
-              ><img src="images/icon-twitter.svg" alt=""
-            /></a>
-          </div>
+        <!-- Socials Container -->
+        <div class="flex space-x-10">
+          <a href="#"
+            ><img src="images/icon-facebook.svg" alt="" class="h-6 ficon"
+          /></a>
+          <a href="#"
+            ><img src="images/icon-twitter.svg" alt="" class="h-6 ficon"
+          /></a>
         </div>
       </div>
     </footer>
