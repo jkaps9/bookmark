@@ -556,31 +556,38 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section id="newsletter" class="bg-blue-600">
-      <!-- Container -->
-      <div
-        class="container flex flex-col items-center justify-center mx-auto mt-10 px-6 py-10 text-center text-white md:mt-20"
-      >
-        <!-- Main Text -->
-        <div class="max-w-md">
-          <p class="mt-5 uppercase">35,000+ already joined</p>
-          <h2 class="text-2xl font-bold md:text-3xl">
-            Stay up-to-date with what we're doing
-          </h2>
-        </div>
-
+    <section id="newsletter" class="bg-softBlue">
+      <!-- Main Container -->
+      <div class="max-w-lg mx-auto py-24">
+        <p
+          class="mb-6 text-lg tracking-widest text-center text-white uppercase"
+        >
+          35,000+ already joined
+        </p>
+        <h2
+          class="px-3 mb-6 text-3xl font-semibold text-white text-center md:text-4xl"
+        >
+          Stay up-to-date with what we're doing
+        </h2>
         <!-- Form -->
-        <form class="my-10 space-x-4">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            class="rounded-md p-2"
-          />
-          <button
-            class="px-8 py-2 bg-red-500 rounded-lg text-white hover:scale-95"
+        <form
+          class="flex flex-col items-start justify-center max-w-2xl mx-auto space-y-6 text-base px-6 md:flex-row md:space-y-0 md:space-x-4 md:px-0"
+        >
+          <!-- Input & Button Container-->
+          <div
+            class="flex flex-col justify-between items-center mx-auto md:flex-row md:mx-0"
           >
-            Contact Us
-          </button>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="flex-1 px-6 pt-3 pb-2 mb-4 rounded-lg border-1 border-white focus:outline-none md:mr-3 md:mb-0"
+            />
+            <input
+              type="submit"
+              class="inline-flex px-6 py-3 font-semibold text-center text-white duration-200 transform rounded-lg cursor-pointer focus:outline-none bg-softRed hover:opacity-90"
+              value="Contact Us"
+            />
+          </div>
         </form>
       </div>
     </section>
